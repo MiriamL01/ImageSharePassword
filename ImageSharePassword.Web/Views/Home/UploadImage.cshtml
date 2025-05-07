@@ -1,0 +1,15 @@
+﻿@using ImageSharePassword.Data
+@model FileUploadViewModel
+
+<div class="row">
+    <div class="col-md-8 offset-md-2 bg-light p-4 rounded shadow">
+        <h3>
+            Thank you for uploading your images.
+            Here's the link to share with your friends:
+            <br /><br />
+            <a href="https://localhost:7191/home/ViewImage?id=@Model.Id">My_Photos</a>
+            <br /><br />
+            Make sure to give them the password of "@Model.Password"
+        </h3>
+    </div>
+</div>
